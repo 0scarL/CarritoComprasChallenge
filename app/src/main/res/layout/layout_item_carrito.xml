@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="15dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_interno"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/layout_carritoFondo"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:contentDescription="fondo de tarjetas"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fondo_madera_oscura"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/layout_carrito_imagenProducto"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:contentDescription="Foto de productos"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/layot_carrito_web"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layot_carrito_nombreProducto" />
+
+            <TextView
+                android:id="@+id/layot_carrito_nombreProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sombra_textos"
+                android:hint="@string/nombeproducto"
+                android:textSize="18sp"
+                android:paddingStart="5dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                app:layout_constraintBottom_toTopOf="@id/layout_carrito_imagenProducto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layout_carritoFondo" />
+
+            <TextView
+                android:id="@+id/layot_carrito_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/sombra_textos"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/precio"
+                android:textColor="@color/colorMoneda"
+                app:layout_constraintTop_toBottomOf="@id/layout_carrito_imagenProducto"
+                app:layout_constraintBottom_toBottomOf="@id/layot_carrito_web"
+                app:layout_constraintEnd_toEndOf="@+id/layout_carrito_imagenProducto" />
+
+            <TextView
+                android:id="@+id/layout_carrito_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#EADB57"
+                android:text="@string/precio_inicial"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/sombra_textos"
+                app:layout_constraintBottom_toBottomOf="@+id/layot_carrito_nombreProducto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.84"
+                app:layout_constraintStart_toEndOf="@+id/layot_carrito_nombreProducto"
+                app:layout_constraintTop_toTopOf="@+id/layot_carrito_nombreProducto"
+                 />
+
+            <TextView
+                android:id="@+id/layot_carrito_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fenix"
+                android:background="@drawable/selecion_textview"
+                android:textAlignment="center"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:text="@string/enviar_mail_al_vendedor"
+                android:textColor="#aaaaff"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/layout_carrito_descripcion"
+                app:layout_constraintStart_toStartOf="@+id/layout_carrito_imagenProducto"
+                app:layout_constraintTop_toBottomOf="@id/layout_carrito_imagenProducto" />
+
+            <TextView
+                android:id="@+id/layout_carrito_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:gravity="center|fill"
+                android:textColor="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/layot_carrito_web"
+                app:layout_constraintStart_toStartOf="@id/layout_carrito_imagenProducto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/layout_carrito_imagenProducto"
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Sharing Challenge!!</string>
+    <string name="nombreProducto">Nombre de Producto</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="precio" tools:ignore="DuplicateDefinition">$</string>
+    <string name="ver_detalles"><![CDATA[Ver detalles >]]></string>
+    <string name="ver_mas"><![CDATA[Ver mas >]]></string>
+    <string name="nombeproducto">NombeProducto</string>
+    <string name="precio_inicial">0</string>
+    <string name="enviar_mail_al_vendedor"><![CDATA[Enviar Mail al Vendedor >]]></string>
+</resources>
