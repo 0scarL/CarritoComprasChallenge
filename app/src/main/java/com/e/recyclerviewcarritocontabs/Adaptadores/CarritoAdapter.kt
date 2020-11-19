@@ -11,7 +11,7 @@ import com.e.recyclerviewcarritocontabs.R
 
 class CarritoAdapter(var listado: MutableList<Productos>, var listener : CarritoListener) : RecyclerView.Adapter<CarritoViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarritoViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.layout_item_carrito, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_item_carrito, parent, false)
         return CarritoViewHolder(view)
     }
 
@@ -22,4 +22,5 @@ class CarritoAdapter(var listado: MutableList<Productos>, var listener : Carrito
     override fun onBindViewHolder(holder: CarritoViewHolder, position: Int) {
         holder.bind(listado[position], listener)
     }
+
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
@@ -35,7 +36,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                android:contentDescription="fondo Card View"
+                android:contentDescription="@string/fondo_card_view"
                 />
 
             <ImageView
@@ -47,7 +48,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="60dp"
                 android:scaleType="centerCrop"
-                android:contentDescription="foto items"
+                android:contentDescription="@string/foto_items"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +61,7 @@
                 android:background="@drawable/sombra_textos"
                 android:hint="@string/nombreProducto"
                 android:paddingStart="5dp"
-                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 app:layout_constraintBottom_toTopOf="@+id/layout_item_imageView"
@@ -93,7 +94,8 @@
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/layout_item_imageView"
-                app:layout_constraintTop_toBottomOf="@+id/layout_item_imageView" />
+                app:layout_constraintTop_toBottomOf="@+id/layout_item_imageView"
+                tools:ignore="TextViewEdits" />
 
             <ImageButton
                 android:id="@+id/layout_item_botonComprar"
@@ -101,27 +103,11 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="16dp"
                 android:scaleType="centerCrop"
-                android:contentDescription="imagen de boton"
+                android:contentDescription="@string/imagen_de_boton"
                 android:src="@drawable/carrito_compras"
                 app:layout_constraintBottom_toBottomOf="@+id/layot_item_textView_nombreProducto"
                 app:layout_constraintEnd_toEndOf="@+id/layout_item_imageView"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/layout_item_VerMas"
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginEnd="5dp"
-                android:padding="2dp"
-                android:text="@string/ver_mas"
-                android:textAlignment="textEnd"
-                android:textColor="#2222ff"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView"
-
-                app:layout_constraintEnd_toEndOf="@id/imageView"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@id/imageView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
