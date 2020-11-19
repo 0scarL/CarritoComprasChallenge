@@ -8,4 +8,7 @@
     <string name="nombeproducto">NombeProducto</string>
     <string name="precio_inicial">0</string>
     <string name="enviar_mail_al_vendedor"><![CDATA[Enviar Mail al Vendedor >]]></string>
+    <string name="fondo_card_view">fondo Card View</string>
+    <string name="foto_items">foto items</string>
+    <string name="imagen_de_boton">imagen de boton</string>
 </resources>
